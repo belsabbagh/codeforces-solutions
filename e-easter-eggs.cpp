@@ -1,6 +1,5 @@
 #include <iostream>
 #include <map>
-#define PROBLEM_NAME "Easter Eggs"
 #define WINDOW_SIZE 4
 #define COLORS "ROYGBIV"
 std::string lay_eggs(int n)
@@ -19,8 +18,7 @@ std::string lay_eggs(int n)
 
 int main()
 {
-  std::cout << "Problem: " << PROBLEM_NAME << std::endl;
-  int n = 13;
-  std::cout << lay_eggs(n) << "\n";
-  return 0;
+  int n;
+  std::cin >> n;
+  std::cout << lay_eggs(n);
 }
