@@ -28,7 +28,11 @@ if __name__ == "__main__":
   if problem is None:
     print("Problem not found")
     exit(1)
-  with open(f"{problem_id}-{problem['title'][3:]}.cpp", "w") as f:
+  filepath = f"{problem_id}-{problem['title'][3:].replace(':', '')}.cpp"
+  if os.path.exists(filepath):
+    print("A solution already exists to this problem")
+    exit(0)
+  with open(filepath, "w") as f:
     f.write("""#include<iostream>
 using namespace std;
 int main(){
