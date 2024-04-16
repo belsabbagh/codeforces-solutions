@@ -48,10 +48,7 @@ def main():
     if statement is None:
         print("Problem statement not found")
         return
-
-    # wrap with max len 80
     statement_lines = textwrap.wrap(statement, 80)
-    # Generate file path
     problem_filename = f"{problem_id}-{problem_title[3:]}"
     filepath = f"{problem_filename.replace(':', '-')}.cpp"
 
@@ -59,7 +56,6 @@ def main():
         print("A solution already exists for this problem")
         return
 
-    # Create the solution file
     with open(filepath, "w") as f:
         f.write(
             f"""/* Problem: {problem_title}\n\n{"\n".join(statement_lines)}*/
