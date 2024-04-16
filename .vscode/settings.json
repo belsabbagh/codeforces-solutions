@@ -50,7 +50,7 @@
         "set": "cpp"
     },
     "codeium.enableConfig": {
-        "*": true
+        "*": false
     },
     "codeium.enableExplainProblem": false,
     "codeium.enableInComments": false,
