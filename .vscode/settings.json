@@ -53,5 +53,6 @@
         "*": true
     },
     "codeium.enableExplainProblem": false,
-    "codeium.enableInComments": false
+    "codeium.enableInComments": false,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
 }

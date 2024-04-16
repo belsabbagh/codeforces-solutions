@@ -1,11 +1,13 @@
-#include<iostream>
-#include<array>
-#include<algorithm>
+#include <iostream>
+#include <array>
+#include <algorithm>
 using namespace std;
-int main(){
+int main()
+{
     array<int, 3> points = array<int, 3>();
-    
-    for(int i = 0; i < 3; i++){
+
+    for (int i = 0; i < 3; i++)
+    {
         cin >> points[i];
     }
     sort(points.begin(), points.end());
