@@ -16,21 +16,17 @@
 
 #include <iostream>
 
-bool is_possible(int n)
-{
-  for (size_t i = 1; i < n; i++)
-  {
+bool is_possible(int n) {
+  for (size_t i = 1; i < n; i++) {
     int h2 = n - i;
-    if (h2 % 2 == 0 && i % 2 == 0)
-    {
+    if (h2 % 2 == 0 && i % 2 == 0) {
       return true;
     }
   }
   return false;
 }
 
-int main()
-{
+int main() {
   int n;
   std::cin >> n;
   std::string res = is_possible(n) ? "YES" : "NO";
