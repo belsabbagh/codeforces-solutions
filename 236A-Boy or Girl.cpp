@@ -1,11 +1,12 @@
 #include <iostream>
-#include <set>
+#include <unordered_set>
+
 using namespace std;
 int main() {
   string name = "";
   cin >> name;
 
-  set<char> chars = set<char>();
+  unordered_set<char> chars = unordered_set<char>();
   for (auto &&i : name) {
     chars.insert(i);
   }

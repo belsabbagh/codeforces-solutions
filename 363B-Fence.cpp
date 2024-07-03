@@ -1,5 +1,4 @@
 #include <iostream>
-#include <limits.h>
 
 int get_min_sum_index(int n, int k, int heights[]) {
   int min_sum = 0;

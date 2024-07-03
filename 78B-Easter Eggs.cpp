@@ -1,5 +1,5 @@
-#include <iostream>
-#include <map>
+#include <bits/stdc++.h>
+
 #define WINDOW_SIZE 4
 #define COLORS "ROYGBIV"
 std::string lay_eggs(int n) {
